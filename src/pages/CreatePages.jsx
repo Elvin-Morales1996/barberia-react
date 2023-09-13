@@ -4,7 +4,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-function CreatePages() {
+const CreatePages=() =>{
    /* const handleSubmit = (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
