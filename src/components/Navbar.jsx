@@ -24,7 +24,7 @@ export const Navbar = () => {
         </li>
 
         <li>
-            <Link to="/pacientes" className="text-white hover:text-gray-400 px-4 py-2">pacientes</Link>
+            <Link to="/clients" className="text-white hover:text-gray-400 px-4 py-2">clients</Link>
         </li>
 
         <li>

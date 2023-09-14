@@ -3,7 +3,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import HomePages from "./pages/HomePages"
 import AboutPage from "./pages/AboutPage"
-import CreatePages from "./pages/CreatePages"
+import { Clients } from "./pages/Clients"
+
 
 
 
@@ -19,7 +20,8 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePages/>}></Route>
       <Route path="/about" element={<AboutPage/>}></Route>
-      <Route path="/crea" element={<CreatePages/>}></Route>
+      <Route path="/clients" element={<Clients/>}></Route>
+      
       
 
     </Routes>
