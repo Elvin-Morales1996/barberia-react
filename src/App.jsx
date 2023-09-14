@@ -20,8 +20,12 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePages/>}></Route>
       <Route path="/about" element={<AboutPage/>}></Route>
+<<<<<<< HEAD
       <Route path="/clients" element={<Clients/>}></Route>
       
+=======
+  
+>>>>>>> 06a9867ce6b3189fe9cfbae55d0a77d70fc2eaab
       
 
     </Routes>
