@@ -10,7 +10,7 @@ export const Navbar = () => {
   
       <div class="text-5xl font-extrabold ...">
   <span class="bg-clip-text  bg-gradient-to-r from-pink-500 ">
-    BARSHOP
+    BARBERIA SHOP
   </span>
 </div>
       
@@ -20,15 +20,10 @@ export const Navbar = () => {
             <Link to="/" className="text-white hover:text-gray-400 px-4 py-2">Inicio</Link>
         </li>
         <li>
-            <Link to="/about" className="text-white hover:text-gray-400 px-4 py-2">Acerca</Link>
+            <Link to="/clients" className="text-white hover:text-gray-400 px-4 py-2">clientes</Link>
         </li>
-
         <li>
-            <Link to="/clients" className="text-white hover:text-gray-400 px-4 py-2">clients</Link>
-        </li>
-
-        <li>
-            <Link to="/create" className="text-white hover:text-gray-400 px-4 py-2">nuevo</Link>
+            <Link to="/cleints" className="text-white hover:text-gray-400 px-4 py-2">clientes</Link>
         </li>
         
       </ul>

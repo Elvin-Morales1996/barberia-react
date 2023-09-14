@@ -2,9 +2,8 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import HomePages from "./pages/HomePages"
-import AboutPage from "./pages/AboutPage"
-import PatientsPage from "./pages/patientsPages"
-import CreatePages from "./pages/CreatePages"
+import Clients from "./pages/Clients"
+
 
 
 
@@ -13,11 +12,11 @@ function App() {
 
   return (
     <>
-  
+ 
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<HomePages/>}></Route>
-      <Route path="/about" element={<AboutPage/>}></Route>
+      <Route path="/clients" element={<Clients/>}></Route>
 
 
     </Routes>
