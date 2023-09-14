@@ -10,7 +10,7 @@ const Clients = () => {
     const onSubmit = async(data) => {
         try {
           
-            const response = await fetch('http://localhost:8000/api/patients', {
+            const response = await fetch('http://127.0.0.1:8000/api/clients', {
               method: 'POST',
               headers: {
                 'Content-type': 'application/json'
@@ -20,7 +20,7 @@ const Clients = () => {
 
             const patient = await response.json()
             console.log(patient)
-            navigate('/patients')
+            navigate('/clients')
 
 
         } catch (error) {
@@ -50,9 +50,9 @@ const Clients = () => {
 
                         <input 
                             className='shadow appearance-none border rounded w-full m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
-                            type="number" 
-                            {...register("age")}
-                            placeholder='Patient Age'
+                            type="text" 
+                            {...register("email")}
+                            placeholder='email'
                         />
                         {
                             errors.name && <span className="text-red-800">this is obligatory</span>
@@ -60,20 +60,21 @@ const Clients = () => {
 
                         <input 
                             className='shadow appearance-none border rounded w-full m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
-                            type="number" 
-                            {...register("num-afi")}
-                            placeholder='Patient affiliation number' 
+                            type="text" 
+                            {...register("phone")}
+                            placeholder='phone' 
                         />
                          {
                             errors.name && <span className="text-red-800">this is obligatory</span>
                         }
 
-                        <textarea className='shadow appearance-none border rounded m-3 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-                            {...register("adress")}
+                        <input className='shadow appearance-none border rounded m-3 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                           type="date"
+                           {...register("birthday_date")}
                             cols="30" 
                             rows="10"
-                            placeholder='Patient Address'
-                        ></textarea>
+                            placeholder='birthday_date'
+                        />
 
                         <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='submit'>Add Patient</button>
                     </form>
