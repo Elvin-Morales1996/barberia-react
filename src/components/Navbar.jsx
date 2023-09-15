@@ -23,7 +23,7 @@ export const Navbar = () => {
             <Link to="/clients" className="text-white hover:text-gray-400 px-4 py-2">clientes</Link>
         </li>
         <li>
-            <Link to="/cleints" className="text-white hover:text-gray-400 px-4 py-2">clientes</Link>
+            <Link to="/services" className="text-white hover:text-gray-400 px-4 py-2">servicios</Link>
         </li>
         
       </ul>
