@@ -19,8 +19,8 @@ const Clients = () => {
             })
 
             const patient = await response.json()
-            console.log(patient)
-            navigate('/clients')
+            alert("cliente registrado")
+            navigate('/')
 
 
         } catch (error) {
