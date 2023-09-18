@@ -5,6 +5,7 @@ import HomePages from "./pages/HomePages"
 import Clients from "./pages/Clients"
 import Services from "./pages/Services"
 import Musics from "./pages/Musics"
+import Branches from "./pages/Branches"
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route path="/clients" element={<Clients/>}></Route>
       <Route path="/services" element={<Services/>}></Route>
       <Route path="/musics" element={<Musics/>}></Route>
+      <Route path="/branches" element={<Branches/>}></Route>
 
 
     </Routes>
